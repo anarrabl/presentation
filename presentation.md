@@ -1,74 +1,99 @@
-% Title Presentation
-% Adam Smith
-% Tilec, Tilburg University
+% Variety expansion & Romer models
+% Ana Arrabal Ortiz
+% TISEM, Tilburg University
 
-
+Motivation
+============
 
 Introduction
-================
+-------------
 
-motivation
-----------
+- Inability of the AK model to produce a convingin model of long term growth and convergence.
+- Endogenous growht theory: Innovation-based models.
 
-- Why are we interested in the wealth of nations?
-- seems a bit boring to me
+-------------
 
+![](http://www.ipdigit.eu/wp-content/uploads/2012/09/3-Innovation-Growth.jpg)
 
---------
+Similarities
+---------------
 
-- Ah, we have a new slide here
-- we can type latex $x^2_1 + x_2^2 = x_3^2$
-- or do an equation environment:
+- No demand for leisure so they offer L inelastically.
+- Utilitiy function: 
 
-$$
-\sum_{i=1}^n x_i^2
-$$
+$$u(c)= c^{1-\epsilon}/(1-\epsilon)$$
 
+- Total amount of final good used in producing intermediate products: 
 
+$$X_{t} = \int_{0}^{M_{t}} X_{i} di$$ 
 
-A new heading
-=================
+(x=xi  for all i).
 
-slide title
------------
+- Free market entry.
 
-- and we have another slide
-
-   - and nested bullets
-
-- the next slide contains a figure
-
----------
-
-![](images/quality1.png)
-
----------
-
-- we can also do a figure from the web
-
----------
+Differences
+----------------
+- Alternative assumption of the Romer Model with Labour as R&D Input: 
+  - L can be used in manufacturing the final good ($L_{1}$);
+  - L can be used in research ($L_{2}$). 
+  
+$L= L_{1}+ L_{2}$
 
 
-![](http://static01.nyt.com/images/2015/07/24/science/24planet2/24planet2-master675.jpg)
+Results
+==============
+
+Product-Variety model (I)
+------------------
+
+- Each intermediate good producer is a monopolist for the product.
+- Mazimizing the flow of profit at each date.
+- Equilibrium profit:
+  - $$\pi= ((1-\alpha)/\alpha) L\alpha^{2/(1-\alpha)}$$
+
+Product-Variety model (II)
+-----------------
+
+- Because $x=xi$ for all i then, $x=X_{t}/M_{t}$ and  using $M_{t}x$ the final good output and GDP will both be proportional to the degree of product variety:
+
+$$Y_{t} = M_{t}(L^{1-\alpha}x^{\alpha}-x)$$
+- Growth rate:
+
+$$g=(1/\epsilon) (\lambda (1-\alpha/\alpha L\alpha^{2/1-\alpha}-\rho)$$
 
 
+Romer model(I)
+-----------------
+- Each intermediate good producer is a monopolist for the product.
+- Mazimizing the flow of profit at each date.
+- Equilibrium profit:
+  - $\pi =((1-\alpha)/\alpha) L_{1}\alpha^{2/(1-\alpha)}$
+  - If profits increase, the prospect of these rents will motivate research activities aimed at discovering new varieties.
 
+Romer Model (II)
+--------------------
+$$\phi<1$$
+
+- the final good output and GDP will both also be proportional to the degree of product variety:
+
+
+$g = M = \lambda L_{2}$ so we have $r=(L-g)$
+$$g = (\lambda\alpha L-\rho)/(\alpha+\epsilon)$$
 
 Conclusion
-----------
+=============
+Final results(I)
+----------------
+- We obtain similar conclusions for both models.
+- Growth increases with:
+  -  Productivity of research activities and the size of the economy. 
+  -  The equilibrium growth rate is always less than the social optimum.
 
-- markdown is a lot of fun
-- use a terminal (like the command prompt in Windows) and navigate
-  (using "cd" --for "change directory") to the directory with this presentation
-- to get the html, type the following on one line:
+Final results (II)
+--------------------
+   
+- Intermediate firmsdo not internalize their contribution to the division of labour;
+- Researchers do not internalize research spill overs;
+- Ideas are non-rival and exclusive "goods".
 
-```
-pandoc -s --mathjax --slide-level 2 --toc --toc-depth=1 -t revealjs
-presentation.md -V theme=solarized -o presentation.html
-```
-- if you want a beamer/latex pdf, type:
 
-```
-pandoc --slide-level 2 --toc --toc-depth=1 -t beamer
-presentation.md -V theme:Montpellier -o presentation.pdf
-```
